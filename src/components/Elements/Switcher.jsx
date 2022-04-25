@@ -55,7 +55,7 @@ class Switcher extends React.Component {
             footerlogo = require('./../../images/logo-' + skin + '.png');
         } else {
             footerlogo = require('./../../images/logo-light-' + skin + '.png');
-        }fN
+        }
 
         this.props.updateFooterLogo(footerlogo);
 
