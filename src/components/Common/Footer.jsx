@@ -23,7 +23,7 @@ class Footer extends React.Component {
                                 <div className="col-md-8 col-sm-8">
                                     <div className="call-to-action-left text-black">
                                         <h4 className="text-uppercase m-b10 m-t0">Subscribe to our newsletter!</h4>
-                                        <span>Never Miss Anything From Construx By Signing Up To Our Newsletter.</span>
+                                        <span>Never Miss Anything From Dalmoore By Signing Up To Our Newsletter.</span>
                                     </div>
                                 </div>
                                 <div className="col-md-4 col-sm-4">
@@ -72,10 +72,10 @@ class Footer extends React.Component {
                                     <div className="widget widget_address_outer">
                                         <h4 className="widget-title">Contact Us</h4>
                                         <ul className="widget_address">
-                                            <li>34/7 Liverpool Street, Suite 636, London, United Kingdom</li>
+                                            <li>Lagos, Nigeria</li>
                                             <li>7xthemedemo@gmail.com</li>
-                                            <li>(+298) 012-3456-789</li>
-                                            <li>(+298) 146-6543-480</li>
+                                            <li>(+294) demo number</li>
+                                            <li>(+294) demo number</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@ class Footer extends React.Component {
                                     </div>
                                 </div>
                                 {/* TAGS */}
-                                <div className="col-lg-3 col-md-6 col-sm-6">
+                                {/* <div className="col-lg-3 col-md-6 col-sm-6">
                                     <div className="widget recent-posts-entry-date">
                                         <h4 className="widget-title">Resent Post</h4>
                                         <div className="widget-post-bx">
@@ -134,7 +134,7 @@ class Footer extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* NEWSLETTER */}
                             </div>
                         </div>
@@ -145,7 +145,7 @@ class Footer extends React.Component {
                         <div className="container">
                             <div className="row">
                                 <div className="mt-footer-bot-center">
-                                    <span className="copyrights-text">© 2021 Your Company. Designed By 7xtheme.</span>
+                                    <span className="copyrights-text">© 2021 Dalmoore</span>
                                 </div>
                             </div>
                         </div>

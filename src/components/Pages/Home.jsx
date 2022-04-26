@@ -4,13 +4,13 @@ import Footer from './../Common/Footer';
 import Slider from './../Elements/Slider';
 import Specialization from './../Elements/Specialization';
 import About from './../Elements/About';
-import OurValue from './../Elements/OurValue';
+// import OurValue from './../Elements/OurValue';
 import OurMission from './../Elements/OurMission';
 import OurServices from './../Elements/OurServices';
 import Callus from './../Elements/Callus';
 import OurProject from './../Elements/OurProject';
-import Blogs from './../Elements/Blogs';
-import Testimonials from './../Elements/Testimonials';
+// import Blogs from './../Elements/Blogs';
+// import Testimonials from './../Elements/Testimonials';
 
 class Home extends React.Component {
     render() {
@@ -21,13 +21,13 @@ class Home extends React.Component {
                     <Slider />
                     <Specialization />
                     <About />
-                    <OurValue />
+                    {/* <OurValue /> */}
                     <OurMission />
                     <OurServices />
                     <Callus />
                     <OurProject />
-                    <Blogs />
-                    <Testimonials />
+                    {/* <Blogs />
+                    <Testimonials /> */}
                 </div>
                 <Footer />
             </>

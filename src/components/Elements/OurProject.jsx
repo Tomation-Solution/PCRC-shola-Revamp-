@@ -3,85 +3,29 @@ import { NavLink } from 'react-router-dom';
 
 const filters = [
     { label: "Commercial", filter: ".cat-1" },
-    { label: "Education", filter: ".cat-4" },
-    { label: "Hospital", filter: ".cat-2" },
+    // { label: "Education", filter: ".cat-4" },
+    // { label: "Hospital", filter: ".cat-2" },
     { label: "Residential", filter: ".cat-3" },
     { label: "Office", filter: ".cat-5" },
-    { label: "Reconstruction", filter: ".cat-6" }
+    // { label: "Reconstruction", filter: ".cat-6" }
 ];
 
 const projects = [
-    {
-        image: require('./../../images/projects/portrait/pic1.jpg'),
-        title: 'Chair Furniture',
-        address: 'Muscat, Sultanate of Oman',
-        width: 'col-md-3',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/projects/portrait/pic2.jpg'),
-        title: 'Furniture',
-        address: 'North House',
-        width: 'col-md-3',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/projects/portrait/pic3.jpg'),
-        title: 'Living room',
-        address: 'Aqaba, Jordan',
-        width: 'col-md-3',
-        filter: 'cat-6'
-    },
-    {
-        image: require('./../../images/projects/portrait/pic4.jpg'),
-        title: 'Dream Workspace',
-        address: 'Perth, Australia',
-        width: 'col-md-3',
-        filter: 'cat-6'
-    },
-    {
-        image: require('./../../images/projects/portrait/pic5.jpg'),
-        title: 'Decore',
-        address: 'Aqaba, Jordan',
-        width: 'col-md-3',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/projects/portrait/pic6.jpg'),
-        title: 'Modern Decoration',
-        address: 'Muscat, Sultanate of Oman',
-        width: 'col-md-3',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/projects/portrait/pic7.jpg'),
-        title: 'Bathroom',
-        address: 'North House',
-        width: 'col-md-3',
-        filter: 'cat-1'
-    },
-    {
-        image: require('./../../images/projects/pic-l-5.jpg'),
-        title: 'Lamp decoration',
-        address: 'Aqaba, Jordan',
-        width: 'col-md-6',
-        filter: 'cat-6'
-    },
-    {
-        image: require('./../../images/projects/pic-1.jpg'),
-        title: 'Building house',
-        address: 'Ultanate of Oman',
-        width: 'col-md-3',
-        filter: 'cat-5'
-    },
-    {
-        image: require('./../../images/projects/pic-2.jpg'),
-        title: 'Spa residence',
-        address: 'Perth, Australia',
-        width: 'col-md-3',
-        filter: 'cat-4'
-    }
-]
+  {
+    image: require("./../../images/projects/portrait/pic1.jpg"),
+    title: "Cedar Mews",
+    address: "interiors",
+    width: "col-md-3",
+    filter: "cat-2",
+  },
+  {
+    image: require("./../../images/projects/portrait/pic2.jpg"),
+    title: "Mansion",
+    address: "interiors",
+    width: "col-md-3",
+    filter: "cat-2",
+  },
+];
 
 class OurProject extends React.Component {
     
