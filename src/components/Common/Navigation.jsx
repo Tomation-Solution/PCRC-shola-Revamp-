@@ -26,12 +26,18 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <>
-                <div className={(this.props.bgcolor !== '') ? `header-nav navbar-collapse collapse ${this.props.bgcolor}` : 'header-nav navbar-collapse collapse'}>
-                    <ul className="nav navbar-nav">
-                        <li className="active">
-                            <NavLink to={""}>Home</NavLink>
-                            {/* <ul className="sub-menu">
+          <>
+            <div
+              className={
+                this.props.bgcolor !== ""
+                  ? `header-nav navbar-collapse collapse ${this.props.bgcolor}`
+                  : "header-nav navbar-collapse collapse"
+              }
+            >
+              <ul className="nav navbar-nav">
+                <li className="active">
+                  <NavLink to={""}>Home</NavLink>
+                  {/* <ul className="sub-menu">
                                 <li>
                                     <NavLink to={"./"}>Home-1</NavLink>
                                 </li>
@@ -45,14 +51,14 @@ class Navigation extends React.Component {
                                 <NavLink to={"/homepage4"}>Home-4</NavLink>
                                 </li>
                             </ul> */}
-                        </li>
-                        <li>
-                        <NavLink to={"/about"}>About us</NavLink>
-                        </li>
-                        <li>
-                        <NavLink to={"/services"}>Services</NavLink>
-                        </li>
-                        <li>
+                </li>
+                <li>
+                  <NavLink to={"/about"}>About us</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/services"}>Services</NavLink>
+                </li>
+                {/* <li>
                         <NavLink to={""}>Pages</NavLink>
                             <ul className="sub-menu">
                                 <li>
@@ -73,44 +79,94 @@ class Navigation extends React.Component {
                                 <NavLink to={"/contactus"}>Contact us</NavLink>
                                 </li>
                             </ul>
-                        </li>
-                        <li>
-                            <NavLink to={""}>Post detail</NavLink>
-                            <ul className="sub-menu">
-                                <li><NavLink to={"/post-image"}>Post Image</NavLink></li>
-                                <li><NavLink to={"/post-gallery"}>Post Gallery</NavLink></li>
-                                <li><NavLink to={"/post-video"}>Post Video</NavLink></li>
-                                <li><NavLink to={"/post-sidebar"}>Post Right Sidebar</NavLink></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <NavLink to={""}>Projects</NavLink>
-                            <ul className="sub-menu">
-                                <li><NavLink to={"/project-grid"}>Project Grid</NavLink></li>
-                                <li><NavLink to={"/project-masonary"}>Project Masonry</NavLink></li>
-                                <li><NavLink to={"/project-carousel"}>Project Carousel</NavLink></li>
-                                <li><NavLink to={"/project-classic1"}>Project Classic-1</NavLink></li>
-                                <li><NavLink to={"/project-classic2"}>Project Classic-2</NavLink></li>
-                                <li><NavLink to={"/project-detail"}>Project Detail</NavLink></li>
-                            </ul>
-                        </li>
-                        <li className="submenu-direction">
-                            <NavLink to={""}>Shortcodes</NavLink>
-                            <ul className="sub-menu">
-                                <li><NavLink to={"/accordian"}>Accordian</NavLink></li>
-                                <li><NavLink to={"/button"}>Button</NavLink></li>
-                                <li><NavLink to={"/iconboxstyle"}>Icon box style</NavLink></li>
-                                <li><NavLink to={"/listgroup"}>List group</NavLink></li>
-                                <li><NavLink to={"/modalpopup"}>Modal popup</NavLink></li>
-                                <li><NavLink to={"/tabs"}>Tabs</NavLink></li>
-                                <li><NavLink to={"/table"}>Table</NavLink></li>
-                                <li><NavLink to={"/video"}>Video</NavLink></li>
-                                <li><NavLink to={"/iconfont"}>Icon Font</NavLink></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </>
+                        </li> */}
+
+                <li>
+                  <NavLink to={"/contactus"}>Contact us</NavLink>
+                </li>
+                {/* <li>
+                  <NavLink to={""}>Post detail</NavLink>
+                  <ul className="sub-menu">
+                    <li>
+                      <NavLink to={"/post-image"}>Post Image</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/post-gallery"}>Post Gallery</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/post-video"}>Post Video</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/post-sidebar"}>Post Right Sidebar</NavLink>
+                    </li>
+                  </ul>
+                </li> */}
+                <li>
+                  <NavLink to={"/project-grid"}>Projects</NavLink>
+                  {/* <ul className="sub-menu">
+                    <li>
+                      <NavLink to={"/project-grid"}>Project Grid</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/project-masonary"}>
+                        Project Masonry
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/project-carousel"}>
+                        Project Carousel
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/project-classic1"}>
+                        Project Classic-1
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/project-classic2"}>
+                        Project Classic-2
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/project-detail"}>Project Detail</NavLink>
+                    </li>
+                  </ul> */}
+                </li>
+                {/* <li className="submenu-direction">
+                  <NavLink to={""}>Shortcodes</NavLink>
+                  <ul className="sub-menu">
+                    <li>
+                      <NavLink to={"/accordian"}>Accordian</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/button"}>Button</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/iconboxstyle"}>Icon box style</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/listgroup"}>List group</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/modalpopup"}>Modal popup</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/tabs"}>Tabs</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/table"}>Table</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/video"}>Video</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/iconfont"}>Icon Font</NavLink>
+                    </li>
+                  </ul>
+                </li> */}
+              </ul>
+            </div>
+          </>
         );
     };
 };
