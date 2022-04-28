@@ -13,8 +13,7 @@ class Specialization3 extends React.Component {
                         <div className="section-content">
                             <div className="section-head m-b50 text-white text-center">
                                 <h3 className="m-t0">We are all constructed out of our self dialogue.</h3>
-                                <p>Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorperadipiscing elit, sed diam nonummy
-              nibh suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                {/*   */}
                             </div>
                             <div className="row">
                                 <div className="col-md-4 col-sm-6 m-b30">
@@ -22,7 +21,7 @@ class Specialization3 extends React.Component {
                                         <img src={require('../../images/services/1.jpg').default}  alt=""/>
                                         <div className="figcaption">
                                             <h4>Concept and Design</h4>
-                                            <p>Est notare quam littera gothica, quam nunc putamus parum claram.</p>
+                                            {/* <p>Est notare quam littera gothica, quam nunc putamus parum claram.</p> */}
                                             <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
@@ -32,7 +31,7 @@ class Specialization3 extends React.Component {
                                         <img src={require('../../images/services/2.jpg').default} alt="" />
                                         <div className="figcaption">
                                             <h4>Refurbishment</h4>
-                                            <p>Est notare quam littera gothica, quam nunc putamus parum claram.</p>
+                                            {/* <p>Est notare quam littera gothica, quam nunc putamus parum claram.</p> */}
                                             <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
@@ -42,7 +41,7 @@ class Specialization3 extends React.Component {
                                         <img src={require('../../images/services/3.jpg').default} alt=""/>
                                         <div className="figcaption bg-dark">
                                             <h4>General Builder</h4>
-                                            <p>Est notare quam littera gothica, quam nunc putamus parum claram.</p>
+                                            {/* <p>Est notare quam littera gothica, quam nunc putamus parum claram.</p> */}
                                             <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
