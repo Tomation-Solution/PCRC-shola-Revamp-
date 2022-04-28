@@ -1,46 +1,43 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-var img1 = require('./../../images/background/bg-4.png');
-var img2 = require('./../../images/background/bg-site.png');
+var img1 = require("./../../images/background/bg-4.png");
+// var img2 = require('./../../images/background/bg-site.png');
 
 class OurValue3 extends React.Component {
-    
-    componentDidMount() {
-        function loadScript(src) {
+  componentDidMount() {
+    function loadScript(src) {
+      return new Promise(function (resolve, reject) {
+        var script = document.createElement("script");
+        script.src = src;
+        script.addEventListener("load", function () {
+          resolve();
+        });
+        script.addEventListener("error", function (e) {
+          reject(e);
+        });
+        document.body.appendChild(script);
+        document.body.removeChild(script);
+      });
+    }
 
-            return new Promise(function (resolve, reject) {
-                var script = document.createElement('script');
-                script.src = src;
-                script.addEventListener('load', function () {
-                    resolve();
-                });
-                script.addEventListener('error', function (e) {
-                    reject(e);
-                });
-                document.body.appendChild(script);
-                document.body.removeChild(script);
-            })
-        };
+    loadScript("./assets/js/masonary.js");
+  }
 
-        loadScript('./assets/js/masonary.js');
-
-    };
-
-    render() {
-        return (
-          <>
-            <div
-              className="section-full p-t80 p-b50 bg-gray bg-no-repeat bg-bottom-right mobile-page-padding"
-              style={{ backgroundImage: "url(" + img1.default + ")" }}
-            >
-              <div className="container">
-                <div className="section-content ">
-                  <div className="row">
-                    <div className="col-md-7 col-sm-6  m-b30">
-                      <div className="brochur bg-dark p-a20">
-                        <div className="row">
-                          {/* <div className="col-md-6">
+  render() {
+    return (
+      <>
+        <div
+          className="section-full p-t80 p-b50 bg-gray bg-no-repeat bg-bottom-right mobile-page-padding"
+          style={{ backgroundImage: "url(" + img1.default + ")" }}
+        >
+          <div className="container">
+            <div className="section-content ">
+              <div className="row">
+                <div className="col-md-7 col-sm-6  m-b30">
+                  <div className="brochur bg-dark p-a20">
+                    <div className="row">
+                      {/* <div className="col-md-6">
                                                 <div className="p-a30 bg-primary bg-bottom-right" style={{ backgroundImage: 'url(' + img2.default + ')' }}>
                                                     <div className="text-black">
                                                         <h4 className="mt-tilte m-t0">Brochure</h4>
@@ -49,101 +46,101 @@ class OurValue3 extends React.Component {
                                                     </div>
                                                 </div>
                                             </div> */}
-                          <div className="col-md-6">
-                            <div className="text-white p-r15">
-                              <h4 className="mt-tilte">Let's help you!</h4>
-                              <p>
-                                Our team will handle all aspect including
-                                bid/award of contracts, management of contracts,
-                                RFI and submittal trafficking, payment
-                                applications, and close out.
-                              </p>
-                              <NavLink
-                                to="/contactus"
-                                className="site-button btn-effect"
-                              >
-                                Contact Us
-                              </NavLink>
-                            </div>
-                          </div>
+                      <div className="col-md-6">
+                        <div className="text-white p-r15">
+                          <h4 className="mt-tilte">Let's help you!</h4>
+                          <p>
+                            Our team will handle all aspect including bid/award
+                            of contracts, management of contracts, RFI and
+                            submittal trafficking, payment applications, and
+                            close out.
+                          </p>
+                          <NavLink
+                            to="/contactus"
+                            className="site-button btn-effect"
+                          >
+                            Contact Us
+                          </NavLink>
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-5 col-sm-6 m-b30">
-                      <div className="our-exp">
-                        <div className="mt-box">
-                          <h3 className="m-t0">
-                            <span className="font-weight-100"> We have</span>
-                            <span className="text-primary"> 11 years</span>{" "}
-                            experience in construction
-                          </h3>
-                        </div>
-                        <span className="progressText text-black">
-                          <b>Architecher</b>
-                        </span>
-                        <div className="progress mt-probar-1  m-b30 m-t10">
-                          <div
-                            className="progress-bar bg-primary "
-                            role="progressbar"
-                            aria-valuenow={85}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                          >
-                            <span
-                              className="popOver"
-                              data-toggle="tooltips"
-                              data-placement="top"
-                              title="85%"
-                            />
-                          </div>
-                        </div>
-                        <span className="progressText text-black">
-                          <b>Construction</b>
-                        </span>
-                        <div className="progress mt-probar-1 m-b30 m-t10">
-                          <div
-                            className="progress-bar bg-primary"
-                            role="progressbar"
-                            aria-valuenow={78}
-                            aria-valuemin={10}
-                            aria-valuemax={100}
-                          >
-                            <span
-                              className="popOver"
-                              data-toggle="tooltips"
-                              data-placement="top"
-                              title="78%"
-                            />
-                          </div>
-                        </div>
-                        <span className="progressText text-black">
-                          <b>Interior</b>
-                        </span>
-                        <div className="progress mt-probar-1 m-b30 m-t10">
-                          <div
-                            className="progress-bar bg-primary"
-                            role="progressbar"
-                            aria-valuenow={40}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                          >
-                            <span
-                              className="popOver"
-                              data-toggle="tooltips"
-                              data-placement="top"
-                              title="40%"
-                            />
-                          </div>
-                        </div>
+                  </div>
+                </div>
+                <div className="col-md-5 col-sm-6 m-b30">
+                  <div className="our-exp">
+                    <div className="mt-box">
+                      <h3 className="m-t0">
+                        <span className="font-weight-100"> We have</span>
+                        <span className="text-primary"> 11 years</span>{" "}
+                        experience in construction
+                      </h3>
+                    </div>
+                    <span className="progressText text-black">
+                      <b>Architecher</b>
+                    </span>
+                    <div className="progress mt-probar-1  m-b30 m-t10">
+                      <div
+                        className="progress-bar bg-primary "
+                        role="progressbar"
+                        aria-valuenow={85}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
+                      >
+                        <span
+                          className="popOver"
+                          data-toggle="tooltips"
+                          data-placement="top"
+                          title="85%"
+                        />
+                      </div>
+                    </div>
+                    <span className="progressText text-black">
+                      <b>Construction</b>
+                    </span>
+                    <div className="progress mt-probar-1 m-b30 m-t10">
+                      <div
+                        className="progress-bar bg-primary"
+                        role="progressbar"
+                        aria-valuenow={78}
+                        aria-valuemin={10}
+                        aria-valuemax={100}
+                      >
+                        <span
+                          className="popOver"
+                          data-toggle="tooltips"
+                          data-placement="top"
+                          title="78%"
+                        />
+                      </div>
+                    </div>
+                    <span className="progressText text-black">
+                      <b>Interior</b>
+                    </span>
+                    <div className="progress mt-probar-1 m-b30 m-t10">
+                      <div
+                        className="progress-bar bg-primary"
+                        role="progressbar"
+                        aria-valuenow={40}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
+                      >
+                        <span
+                          className="popOver"
+                          data-toggle="tooltips"
+                          data-placement="top"
+                          title="40%"
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </>
-        );
-    }
-};
+          </div>
+        </div>
+      </>
+    );
+  }
+}
 
 export default OurValue3;
