@@ -2,31 +2,35 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const services = [
-    {
-        count: 1,
-        title: `Building Construction`,
-        icon: require('./../../images/icon/crane-1.png'),
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
-    },
-    {
-        count: 2,
-        title: 'Building Renovation',
-        icon: require('./../../images/icon/renovation.png'),
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
-    },
-    {
-        count: 3,
-        title: 'Building Maintenance',
-        icon: require('./../../images/icon/toolbox.png'),
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
-    },
-    {
-        count: 4,
-        title: 'Architecture Design',
-        icon: require('./../../images/icon/compass.png'),
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
-    }
-]
+  {
+    count: 1,
+    title: `Project and Construction Management`,
+    icon: require("./../../images/icon/crane-1.png"),
+    description:
+      "We provide owners with the day-to-day design management as part of a larger project. ",
+  },
+  {
+    count: 2,
+    title: "Site Selection",
+    icon: require("./../../images/icon/renovation.png"),
+    description:
+      "We have a unique methodology for uncovering and “creating” new sites.We maintain full in-house real estate brokerage capabilities...",
+  },
+  {
+    count: 3,
+    title: "Risk Assessments and Entitlements",
+    icon: require("./../../images/icon/toolbox.png"),
+    description:
+      "Our team will clearly communicate to you the expectations, risks, and opportunities of your particular entitlement challenge.",
+  },
+//   {
+//     count: 4,
+//     title: "Architecture Design",
+//     icon: require("./../../images/icon/compass.png"),
+//     description:
+//       "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
+//   },
+];
 
 var img1 = require('./../../images/background/ptn-1.png');
 

@@ -5,7 +5,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const images = [
-    require('./../../images/gallery/portrait/pic4.jpg'),
+    // require('./../../images/gallery/portrait/pic4.jpg'),
     require('./../../images/gallery/portrait/pic5.jpg'),
     require('./../../images/gallery/portrait/pic6.jpg'),
     require('./../../images/gallery/portrait/pic7.jpg'),
@@ -49,51 +49,73 @@ class About4 extends React.Component {
             dots: true
         };
         return (
-            <>
-                <div className="section-full p-t30 p-b80 bg-white inner-page-padding">
-                    <div className="container">
-                        <div className="section-content ">
-                            <div className="row">
-                                <div className="col-md-5 col-sm-6">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                            {images.map((item, index) => (
-                                                <div className="item" key={index}>
-                                                    <div className="ow-img">
-                                                    <NavLink to="/about"><img src={item.default} alt=""/></NavLink>
-                                                    </div>
-                                                </div>
-                                            ))}
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-md-7 col-sm-6">
-                                    <div className="m-about-containt text-black p-t80">
-                                        <div className="m-about-years bg-moving" style={{backgroundImage:"url(" + bnr1.default + ")"}}>
-                                            <span className="text-primary large-title">25</span>
-                                            <span className="large-title-info">Years of Experience</span>
-                                        </div>
-                                        <h3 className="font-weight-600">Improving quality of life with an integrated unified approach.</h3>
-                                        <p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical. Due to its widespread use texts.  Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
-                                        <div className="author-info p-t20">
-                                            <div className="author-signature">
+          <>
+            <div className="section-full p-t30 p-b80 bg-white inner-page-padding">
+              <div className="container">
+                <div className="section-content ">
+                  <div className="row">
+                    <div className="col-md-5 col-sm-6">
+                      <div className="m-about ">
+                        <OwlCarousel
+                          className="owl-carousel about-us-carousel"
+                          {...options}
+                        >
+                          {images.map((item, index) => (
+                            <div className="item" key={index}>
+                              <div className="ow-img">
+                                <NavLink to="/about">
+                                  <img src={item.default} alt="" />
+                                </NavLink>
+                              </div>
+                            </div>
+                          ))}
+                        </OwlCarousel>
+                      </div>
+                    </div>
+                    <div className="col-md-7 col-sm-6">
+                      <div className="m-about-containt text-black p-t80">
+                        <div
+                          className="m-about-years bg-moving"
+                          style={{
+                            backgroundImage: "url(" + bnr1.default + ")",
+                          }}
+                        >
+                          <span className="text-primary large-title">11</span>
+                          <span className="large-title-info">
+                            Years of Experience
+                          </span>
+                        </div>
+                        <h3 className="font-weight-600">
+                          Improving quality of life with an integrated unified
+                          approach.
+                        </h3>
+                        <p>
+                          Our team will handle all aspect including bid/award of
+                          contracts, management of contracts, RFI and submittal
+                          trafficking, payment applications, and close out.
+                        </p>
+                        <div className="author-info p-t20">
+                          {/* <div className="author-signature">
                                                 <img src={require('./../../images/Signature+Black.png').default} alt="Signature" width={150} />
                                             </div>
                                             <div className="author-name">
                                                 <h4 className="m-t0">David Houkr</h4>
                                                 <p>Architect &amp; Founder</p>
-                                            </div>
-                                            <NavLink to="/about" className="site-button btn-effect m-b15"><span>Get in touch</span></NavLink>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            </div> */}
+                          <NavLink
+                            to="/contactus"
+                            className="site-button btn-effect m-b15"
+                          >
+                            <span>Get in touch</span>
+                          </NavLink>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </>
+              </div>
+            </div>
+          </>
         );
     }
 };

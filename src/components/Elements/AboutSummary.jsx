@@ -43,7 +43,7 @@ class AboutSummary extends React.Component {
                                 <div className="col-md-4 col-sm-6">
                                     <div className="our-story-pic-block">
                                         <div className="mt-media our-story-pic">
-                                            <img src={require('./../../images/gallery/portrait/pic4.jpg').default} alt=""/>
+                                            <img src={require('./../../images/gallery/portrait/pic2.jpg').default} alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@ class AboutSummary extends React.Component {
                                 <div className="col-md-4 col-sm-6">
                                     <div className="our-story-pic-block">
                                         <div className="mt-media our-story-pic">
-                                            <img src={require('./../../images/gallery/portrait/pic7.jpg').default} alt=""/>
+                                            <img src={require('./../../images/gallery/portrait/pic3.jpg').default} alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@ class AboutSummary extends React.Component {
                                 <div className="col-md-4 col-sm-6">
                                     <div className="our-story-pic-block">
                                         <div className="mt-media our-story-pic">
-                                            <img src={require('./../../images/gallery/portrait/pic6.jpg').default} alt=""/>
+                                            <img src={require('./../../images/gallery/portrait/pic4.jpg').default} alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@ class AboutSummary extends React.Component {
                                 <div className="col-md-4 col-sm-6">
                                     <div className="our-story-pic-block">
                                         <div className="mt-media our-story-pic">
-                                            <img src={require('./../../images/gallery/portrait/pic5.jpg').default} alt=""/>
+                                            <img src={require('./../../images/gallery/portrait/pic8.jpg').default} alt=""/>
                                         </div>
                                     </div>
                                 </div>

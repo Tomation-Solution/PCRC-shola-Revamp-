@@ -53,22 +53,7 @@ class Header extends React.Component {
             <>
 
                 <header className="site-header header-style-1">
-                    <div className="top-bar bg-gray">
-                        <div className="container">
-                            <div className="row">
-                                <div className="mt-topbar-left clearfix">
-                                    <ul className="list-unstyled e-p-bx pull-right">
-                                        <li><i className="fa fa-envelope" /> 7xthemehelp@gmail.com</li>
-                                        <li><i className="fa fa-phone" />(075) 123-7654</li>
-                                        {/* <li><i className="fa fa-clock-o" />Sun-Sat 9.45 am</li> */}
-                                    </ul>
-                                </div>
-                                <div className="mt-topbar-right clearfix">
-                                    <div className="appint-btn"><NavLink to={"#"} className="site-button">Make an Appointment</NavLink></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div className="sticky-header main-bar-wraper">
                         <div className="main-bar bg-white">
                             <div className="container">
