@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import {projects} from './projectdata.js';
 
 const filters = [
     { label: "Commercial", filter: ".cat-1" },
@@ -10,22 +11,7 @@ const filters = [
     // { label: "Reconstruction", filter: ".cat-6" }
 ];
 
-const projects = [
-  {
-    image: require("./../../images/projects/portrait/pic1.jpg"),
-    title: "Cedar Mews",
-    address: "interiors",
-    width: "col-md-3",
-    filter: "cat-2",
-  },
-  {
-    image: require("./../../images/projects/portrait/pic2.jpg"),
-    title: "Mansion",
-    address: "interiors",
-    width: "col-md-3",
-    filter: "cat-2",
-  },
-];
+
 
 class OurProject extends React.Component {
     

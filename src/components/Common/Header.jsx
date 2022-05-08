@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../Common/Navigation';
 import { NavLink } from 'react-router-dom';
 
-var bnr = require('./../../images/background/bg-5.png');
+// var bnr = require('./../../images/background/bg-5.png');
 
 class Header extends React.Component {
 
@@ -46,8 +46,8 @@ class Header extends React.Component {
     }
 
     render() {
-        const isSearchActive = this.state.isSearchActive;
-        const isQuoteActive = this.state.isQuoteActive;
+        // const isSearchActive = this.state.isSearchActive;
+        // const isQuoteActive = this.state.isQuoteActive;
         
         return (
             <>
@@ -72,7 +72,7 @@ class Header extends React.Component {
                                     <span className="icon-bar" />
                                 </button>
                                 {/* ETRA Nav */}
-                                <div className="extra-nav">
+                                {/* <div className="extra-nav">
                                     <div className="extra-cell">
                                         <NavLink to={"#"} onClick={this.handleSearchToggle}> 
                                             <i className="fa fa-search" />
@@ -81,10 +81,10 @@ class Header extends React.Component {
                                     <div className="extra-cell">
                                         <NavLink to={"#"} className="contact-slide-show" onClick={this.handleQuoteToggle}><i className="fa fa-angle-left arrow-animation" /></NavLink>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* ETRA Nav */}
                                 {/* Contact Nav */}
-                                <div className="contact-slide-hide " style={{ backgroundImage: 'url(' + bnr.default + ')', right: isQuoteActive ? '0px' : '-500px' }}>
+                                {/* <div className="contact-slide-hide " style={{ backgroundImage: 'url(' + bnr.default + ')', right: isQuoteActive ? '0px' : '-500px' }}>
                                     <div className="contact-nav">
                                     <NavLink to={"#"} className="contact_close" onClick={this.handleQuoteToggle}>×</NavLink>
                                         <div className="contact-nav-form p-a30">
@@ -126,9 +126,9 @@ class Header extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* SITE Search */}
-                                <div id="search" className={isSearchActive ? "open" : null}>
+                                {/* <div id="search" className={isSearchActive ? "open" : null}>
                                     <span className="close" onClick={this.handleSearchToggle} />
                                     <form role="search" id="searchform" action="/search" method="get" className="radius-xl">
                                         <div className="input-group">
@@ -136,7 +136,7 @@ class Header extends React.Component {
                                             <span className="input-group-btn"><button type="button" className="search-btn"><i className="fa fa-search arrow-animation" /></button></span>
                                         </div>
                                     </form>
-                                </div>
+                                </div> */}
                                 {/* MAIN Vav */}
                                 <Navigation />
                             </div>

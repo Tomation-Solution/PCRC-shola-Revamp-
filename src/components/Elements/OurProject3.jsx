@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const filters = [
-    { label: "Construction", filter: ".cat-1" },
-    { label: "Renovation", filter: ".cat-2" },
-    { label: "Outdoor", filter: ".cat-3" },
-    { label: "Interiors", filter: ".cat-4" },
-    { label: "Consulting", filter: ".cat-5" },
+// const filters = [
+//     { label: "Construction", filter: ".cat-1" },
+//     { label: "Renovation", filter: ".cat-2" },
+//     { label: "Outdoor", filter: ".cat-3" },
+//     { label: "Interiors", filter: ".cat-4" },
+//     { label: "Consulting", filter: ".cat-5" },
 
-];
+// ];
 
 const projects = [
     {
@@ -23,42 +23,42 @@ const projects = [
         address: 'Muscat, Sultanate of Oman',
         filter: 'cat-2'
     },
-    {
-        image: require('./../../images/services/service-projects/garden-house.jpg'),
-        title: 'Garden House',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/services/service-projects/villa.jpg'),
-        title: 'Villa',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-4'
-    },
-    {
-        image: require('./../../images/services/service-projects/road-construction.jpg'),
-        title: 'Road Construction',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-5'
-    },
-    {
-        image: require('./../../images/services/service-projects/bridge.jpg'),
-        title: 'Bridge Construction',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-4'
-    },
-    {
-        image: require('./../../images/services/service-projects/building-ren.jpg'),
-        title: 'Building Renovation',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/services/service-projects/dam-construction.jpg'),
-        title: 'Dam Construction',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-2'
-    },
+    // {
+    //     image: require('./../../images/services/service-projects/garden-house.jpg'),
+    //     title: 'Garden House',
+    //     address: 'Muscat, Sultanate of Oman',
+    //     filter: 'cat-3'
+    // },
+    // {
+    //     image: require('./../../images/services/service-projects/villa.jpg'),
+    //     title: 'Villa',
+    //     address: 'Muscat, Sultanate of Oman',
+    //     filter: 'cat-4'
+    // },
+    // {
+    //     image: require('./../../images/services/service-projects/road-construction.jpg'),
+    //     title: 'Road Construction',
+    //     address: 'Muscat, Sultanate of Oman',
+    //     filter: 'cat-5'
+    // },
+    // {
+    //     image: require('./../../images/services/service-projects/bridge.jpg'),
+    //     title: 'Bridge Construction',
+    //     address: 'Muscat, Sultanate of Oman',
+    //     filter: 'cat-4'
+    // },
+    // {
+    //     image: require('./../../images/services/service-projects/building-ren.jpg'),
+    //     title: 'Building Renovation',
+    //     address: 'Muscat, Sultanate of Oman',
+    //     filter: 'cat-3'
+    // },
+    // {
+    //     image: require('./../../images/services/service-projects/dam-construction.jpg'),
+    //     title: 'Dam Construction',
+    //     address: 'Muscat, Sultanate of Oman',
+    //     filter: 'cat-2'
+    // },
 ]
 
 var img1 = require('./../../images/background/bg5.jpg');
@@ -99,7 +99,7 @@ class OurProject3 extends React.Component {
                         </div>
                         {/* TITLE END */}
                         {/* PAGINATION START */}
-                        <div className="filter-wrap p-b15 center">
+                        {/* <div className="filter-wrap p-b15 center">
                             <ul className="masonry-filter link-style  text-uppercase white">
                                 <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li>
                                 {filters.map((item, index) => (
@@ -107,7 +107,7 @@ class OurProject3 extends React.Component {
                                 ))}
 
                             </ul>
-                        </div>
+                        </div> */}
                         {/* PAGINATION END */}
                         {/* GALLERY CONTENT START */}
                         <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
