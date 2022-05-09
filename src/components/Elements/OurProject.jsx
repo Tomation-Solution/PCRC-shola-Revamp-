@@ -76,7 +76,7 @@ class OurProject extends React.Component {
                                                 <h4 className="mt-tilte m-b10 m-t0">{item.title}</h4>
                                                 <p className="m-b0">{item.address}</p>
                                             </div>
-                                            <NavLink to="/project-detail"></NavLink>
+                                            <NavLink to={`/project-detail/${item.id}`}></NavLink>
                                         </div>
                                     </div>
                                 ))}
