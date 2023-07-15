@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import  {useState} from 'react'
 
 class Navigation extends React.Component {
   componentDidMount() {
@@ -43,7 +42,7 @@ class Navigation extends React.Component {
             <li className={this.state.activeNav === "#" ? "active" : ""}>
               <NavLink to={""}>Home</NavLink>
             </li>
-            <li
+            {/* <li
               onClick={() => this.setState({ activeNav: "about" })}
               className={this.state.activeNav === "about" ? "active" : ""}
             >
@@ -69,7 +68,7 @@ class Navigation extends React.Component {
               }
             >
               <NavLink to={"/project-grid"}>Projects</NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </>
