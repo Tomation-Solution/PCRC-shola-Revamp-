@@ -66,7 +66,7 @@ class About extends React.Component {
                 <div className="mt-separator">
                   <h2 className="text-white text-uppercase sep-line-one ">
                     <span className="font-weight-300 text-primary">About</span>{" "}
-                    Company
+                    pcrc
                   </h2>
                 </div>
               </div>
@@ -96,23 +96,24 @@ class About extends React.Component {
                       {/* <span className="font-weight-100">
                            
                           </span>   */}
-                      Small yet passionate group of developers
+                      PCRC - Police Community Relations Committee
                     </h3>
                     <p>
                       <strong>
-                        Our team of seasoned construction professionals has a
-                        combined technical expertise and knowledge across a wide
-                        range of property types
+                        The PCRC, which stands for Police Community Relations
+                        Committee, is an organization dedicated to community
+                        policing and operates as part of the Nigeria Police
+                        Force. It was established in 1984 with the primary
+                        objective of fostering stronger relationships between
+                        local communities and the police force.
                       </strong>
                     </p>
                     <p>
-                      our award-winning team makes challenging projects look
-                      effortless, from historic preservation to cutting-edge
-                      contemporary designs. Adept in modern technologies and
-                      sophisticated modeling systems, we’ve mastered
-                      complexities that are beyond the scope of other builders –
-                      all while providing unparalleled craftsmanship and
-                      customer service.
+                      By enhancing these relationships, the PCRC aims to improve
+                      the effectiveness and efficiency of policing in Nigerian
+                      communities. Through collaborative efforts and open
+                      communication, the PCRC strives to create safer and more
+                      secure environments for all residents.
                     </p>
                     <div className="text-right">
                       <NavLink

@@ -1,78 +1,89 @@
-import React from 'react';
-import Navigation from '../Common/Navigation';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import Navigation from "../Common/Navigation";
+import { NavLink } from "react-router-dom";
 
 // var bnr = require('./../../images/background/bg-5.png');
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { logo: require("./../../images/logo-light.png") };
+  }
 
-    constructor(props){
-        super(props);
-        this.state = {logo: require('./../../images/logo-light.png')};
-    }
+  state = { isSearchActive: false, isQuoteActive: false };
 
-    state = { isSearchActive: false, isQuoteActive: false };
+  handleSearchToggle = () => {
+    this.setState({ isSearchActive: !this.state.isSearchActive });
+  };
 
-    handleSearchToggle = () => {
-        this.setState({ isSearchActive: !this.state.isSearchActive });
+  handleQuoteToggle = () => {
+    this.setState({ isQuoteActive: !this.state.isQuoteActive });
+  };
+
+  componentDidMount() {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+
+      const stickyheader = document.querySelector(".sticky-header ");
+
+      if (offset >= 100) {
+        stickyheader.classList.add("is-fixed");
+        stickyheader.classList.add("color-fill");
+      } else {
+        stickyheader.classList.remove("is-fixed");
+        stickyheader.classList.remove("color-fill");
+      }
     };
 
-    handleQuoteToggle = () => {
-        this.setState({ isQuoteActive: !this.state.isQuoteActive });
+    window.addEventListener("scroll", handleScroll);
+
+    window.updateTopMostParent = (logopath) => {
+      this.setState({ logo: logopath });
     };
+  }
 
-    componentDidMount() {
+  render() {
+    // const isSearchActive = this.state.isSearchActive;
+    // const isQuoteActive = this.state.isQuoteActive;
 
-        const handleScroll = () => {
-            const offset = window.scrollY;
-
-            const stickyheader = document.querySelector('.sticky-header ');
-
-            if (offset >= 100) {
-                stickyheader.classList.add('is-fixed');
-                stickyheader.classList.add('color-fill');
-
-            } else {
-                stickyheader.classList.remove('is-fixed');
-                stickyheader.classList.remove('color-fill');
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll);
-
-        window.updateTopMostParent = (logopath) => {
-           this.setState({ logo: logopath }); 
-        };
-    }
-
-    render() {
-        // const isSearchActive = this.state.isSearchActive;
-        // const isQuoteActive = this.state.isQuoteActive;
-        
-        return (
-            <>
-
-                <header className="site-header header-style-1">
-                    
-                    <div className="sticky-header main-bar-wraper">
-                        <div className="main-bar bg-white">
-                            <div className="container">
-                                <div className="logo-header">
-                                    <div className="logo-header-inner logo-header-one">
-                                        <NavLink to={"./"}>
-                                            <img src={this.state.logo.default} alt="Shapen" />
-                                        </NavLink>
-                                    </div>
-                                </div>
-                                {/* NAV Toggle Button */}
-                                <button data-target=".header-nav" data-toggle="collapse" type="button" className="navbar-toggle collapsed">
-                                    <span className="sr-only">Toggle navigation</span>
-                                    <span className="icon-bar" />
-                                    <span className="icon-bar" />
-                                    <span className="icon-bar" />
-                                </button>
-                                {/* ETRA Nav */}
-                                {/* <div className="extra-nav">
+    return (
+      <>
+        <header className="site-header header-style-1">
+          <div className="sticky-header main-bar-wraper">
+            <div
+              style={{
+                backgroundColor: "#378E3D",
+              }}
+              className="main-bar "
+            >
+              <div className="container">
+                <div className="logo-header">
+                  <div
+                    className="logo-header-inner logo-header-one"
+                    style={{
+                      backgroundColor: "#ffffff",
+                      borderRadius: "50px",
+                    }}
+                  >
+                    <NavLink to={"./"}>
+                      <img src={this.state.logo.default} alt="Shapen" />
+                    </NavLink>
+                  </div>
+                </div>
+                {/* NAV Toggle Button */}
+                <button
+                  data-target=".header-nav"
+                  data-toggle="collapse"
+                  type="button"
+                  className="navbar-toggle collapsed"
+                >
+                  <span className="sr-only">Toggle navigation</span>
+                  <span className="icon-bar" />
+                  <span className="icon-bar" />
+                  <span className="icon-bar" />
+                </button>
+                {/* ETRA Nav */}
+                {/* <div className="extra-nav">
                                     <div className="extra-cell">
                                         <NavLink to={"#"} onClick={this.handleSearchToggle}> 
                                             <i className="fa fa-search" />
@@ -82,9 +93,9 @@ class Header extends React.Component {
                                         <NavLink to={"#"} className="contact-slide-show" onClick={this.handleQuoteToggle}><i className="fa fa-angle-left arrow-animation" /></NavLink>
                                     </div>
                                 </div> */}
-                                {/* ETRA Nav */}
-                                {/* Contact Nav */}
-                                {/* <div className="contact-slide-hide " style={{ backgroundImage: 'url(' + bnr.default + ')', right: isQuoteActive ? '0px' : '-500px' }}>
+                {/* ETRA Nav */}
+                {/* Contact Nav */}
+                {/* <div className="contact-slide-hide " style={{ backgroundImage: 'url(' + bnr.default + ')', right: isQuoteActive ? '0px' : '-500px' }}>
                                     <div className="contact-nav">
                                     <NavLink to={"#"} className="contact_close" onClick={this.handleQuoteToggle}>×</NavLink>
                                         <div className="contact-nav-form p-a30">
@@ -127,8 +138,8 @@ class Header extends React.Component {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* SITE Search */}
-                                {/* <div id="search" className={isSearchActive ? "open" : null}>
+                {/* SITE Search */}
+                {/* <div id="search" className={isSearchActive ? "open" : null}>
                                     <span className="close" onClick={this.handleSearchToggle} />
                                     <form role="search" id="searchform" action="/search" method="get" className="radius-xl">
                                         <div className="input-group">
@@ -137,17 +148,15 @@ class Header extends React.Component {
                                         </div>
                                     </form>
                                 </div> */}
-                                {/* MAIN Vav */}
-                                <Navigation />
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-            </>
-        );
-    };
-};
+                {/* MAIN Vav */}
+                <Navigation />
+              </div>
+            </div>
+          </div>
+        </header>
+      </>
+    );
+  }
+}
 
 export default Header;
-
