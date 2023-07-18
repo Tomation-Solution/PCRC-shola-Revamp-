@@ -1,11 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import crane_1 from "./../../images/icon/crane-1.png";
+import renovation from "./../../images/icon/renovation.png";
+import toolbox from "./../../images/icon/toolbox.png";
+import compass from "./../../images/icon/compass.png";
+import img1 from "./../../images/background/ptn-1.png";
 
 const services = [
   {
     count: 1,
     title: `Strengthening Community-Police Collaboration for Effective Policing in Nigeria`,
-    icon: require("./../../images/icon/crane-1.png"),
+    icon: crane_1,
     description:
       "We The PCRC – Police Community Relations Committee – is a community policing organization and is a part of the Nigeria police force. The organization was established in 1984 and its main objective was to increase the relationship with local communities and the police force. Subsequently, this will make policing in Nigerian communities more effective and efficient.",
   },
@@ -13,7 +18,7 @@ const services = [
     count: 2,
     title:
       "PCRC: Building Strong Community-Police Partnerships in Lagos State and Beyond",
-    icon: require("./../../images/icon/renovation.png"),
+    icon: renovation,
     description:
       "PCRC follows a similar structure as the Nigerian police force. Hence, they have area commands, divisions, zonal commands, national components, and state commands amongst others. While PCRC is present in many Nigerian states, the organization is most renowned in Lagos State.",
   },
@@ -21,7 +26,7 @@ const services = [
     count: 3,
     title:
       "Fostering Trust and Safety: PCRC's Commitment to Community Engagement and Professional Policing",
-    icon: require("./../../images/icon/toolbox.png"),
+    icon: toolbox,
     description:
       "Since the organization is all about police and community relationship, officers are mainly trained on how to show better conduct and countenances when dealing with locals. They engage with the community to source useful information that the police can use in keeping the place safe.",
   },
@@ -29,13 +34,11 @@ const services = [
     count: 4,
     title:
       "Empowering Communities: PCRC's Proactive Efforts in Combatting Cultism and Drug Abuse",
-    icon: require("./../../images/icon/compass.png"),
+    icon: compass,
     description:
       "For example, the PCRC carries out campaigns in communities to warn youths against cultism and drug abuse. They often hold public lectures, training, town hall meetings, and a lot others to sensitize the community about the need to refrain from crime.",
   },
 ];
-
-var img1 = require("./../../images/background/ptn-1.png");
 
 class Specialization4 extends React.Component {
   render() {

@@ -1,8 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-var img1 = require("./../../images/background/bg-4.png");
-// var img2 = require('./../../images/background/bg-site.png');
+import img1 from "./../../images/background/bg-4.png";
 
 class OurValue3 extends React.Component {
   componentDidMount() {
@@ -29,7 +27,7 @@ class OurValue3 extends React.Component {
       <>
         <div
           className="section-full p-t80 p-b50 bg-gray bg-no-repeat bg-bottom-right mobile-page-padding"
-          style={{ backgroundImage: "url(" + img1.default + ")" }}
+          style={{ backgroundImage: "url(" + img1 + ")" }}
         >
           <div className="container">
             <div className="section-content ">

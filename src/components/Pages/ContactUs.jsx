@@ -3,8 +3,7 @@ import GoogleMaps from "simple-react-google-maps";
 import Header from "./../Common/Header";
 import Footer from "./../Common/Footer";
 import Banner from "./../Elements/Banner";
-
-var bnrimg = require("./../../images/banner/4.jpg");
+import bnrimg from "./../../images/banner/4.jpg";
 
 class ContactUs extends React.Component {
   render() {
@@ -15,7 +14,7 @@ class ContactUs extends React.Component {
           <Banner
             title="Putting your safety first, reach out to report any form of suspicion!"
             pagename="Contact Us"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
 
           {/* SECTION CONTENTG START */}

@@ -83,7 +83,7 @@ class OurProject extends React.Component {
                   >
                     <div className="mt-box   image-hover-block">
                       <div className="mt-thum-bx">
-                        <img src={item.image.default} alt="" />
+                        <img src={item.image} alt="" />
                       </div>
                       <div className="mt-info  p-t20 text-white">
                         <h4 className="mt-tilte m-b10 m-t0">{item.title}</h4>

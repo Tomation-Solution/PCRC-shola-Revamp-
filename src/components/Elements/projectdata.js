@@ -1,12 +1,19 @@
 // import image1 from "./../../images/projects/portrait/pic1.jpg";
 // import image2 from "./../../images/projects/portrait/pic2.jpg";
+import pic1_thumb1 from "./../../images/projects/portrait/pic1_thumb1.jpg";
+import pic1_thumb2 from "./../../images/projects/portrait/pic1_thumb2.jpg";
+import pic2_thumb1 from "./../../images/projects/portrait/pic2_thumb1.jpg";
+import pic2_thumb2 from "./../../images/projects/portrait/pic2_thumb2.jpg";
+import pic1 from "./../../images/projects/portrait/pic1.jpg";
+import pic2 from "./../../images/projects/portrait/pic2.jpg";
+import pic3 from "./../../images/projects/portrait/pic3.jpg";
 
 export const projects = [
   {
     id: 1,
-    thumb1: require("./../../images/projects/portrait/pic1_thumb1.jpg"),
-    thumb2: require("./../../images/projects/portrait/pic1_thumb2.jpg"),
-    image: require("./../../images/projects/portrait/pic1.jpg"),
+    thumb1: pic1_thumb1,
+    thumb2: pic1_thumb2,
+    image: pic1,
     title: "Lagos State CP Idowu Owohunwa",
     description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
     address: "",
@@ -23,9 +30,9 @@ export const projects = [
 
   {
     id: 2,
-    thumb1: require("./../../images/projects/portrait/pic2_thumb1.jpg"),
-    thumb2: require("./../../images/projects/portrait/pic2_thumb2.jpg"),
-    image: require("./../../images/projects/portrait/pic2.jpg"),
+    thumb1: pic2_thumb1,
+    thumb2: pic2_thumb2,
+    image: pic2,
     title: "PCRC 6th Biennial Conference",
     description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
     address: "",
@@ -42,9 +49,9 @@ export const projects = [
 
   {
     id: 3,
-    thumb1: require("./../../images/projects/portrait/pic2_thumb1.jpg"),
-    thumb2: require("./../../images/projects/portrait/pic2_thumb2.jpg"),
-    image: require("./../../images/projects/portrait/pic3.jpg"),
+    thumb1: pic2_thumb1,
+    thumb2: pic2_thumb2,
+    image: pic2,
     title: "Kansas Mansion",
     description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
     address: "interiors",

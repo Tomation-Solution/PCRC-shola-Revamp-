@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Switcher from "../Elements/Switcher";
-
-var bgimage = require("./../../images/background/bg-site.png");
+import bgimage from "./../../images/background/bg-site.png";
+import logo_dark from "./../../images/logo-dark.png";
 
 class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.currentstate = {
-      logo: require("./../../images/logo-dark.png").default,
+      logo: logo_dark,
     };
   }
 

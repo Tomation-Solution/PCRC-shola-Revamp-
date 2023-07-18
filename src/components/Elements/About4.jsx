@@ -3,16 +3,26 @@ import { NavLink } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import pic5 from "./../../images/gallery/portrait/pic5.jpg";
+import pic6 from "./../../images/gallery/portrait/pic6.jpg";
+import pic7 from "./../../images/gallery/portrait/pic7.jpg";
+import pic1 from "./../../images/gallery/portrait/pic1.jpg";
+import bnr1 from "./../../images/background/line.png";
 
 const images = [
-  // require('./../../images/gallery/portrait/pic4.jpg'),
-  require("./../../images/gallery/portrait/pic5.jpg"),
-  require("./../../images/gallery/portrait/pic6.jpg"),
-  require("./../../images/gallery/portrait/pic7.jpg"),
-  require("./../../images/gallery/portrait/pic1.jpg"),
+  {
+    default: pic5,
+  },
+  {
+    default: pic6,
+  },
+  {
+    default: pic7,
+  },
+  {
+    default: pic1,
+  },
 ];
-
-var bnr1 = require("./../../images/background/line.png");
 
 class About4 extends React.Component {
   componentDidMount() {

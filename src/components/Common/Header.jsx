@@ -1,13 +1,14 @@
 import React from "react";
 import Navigation from "../Common/Navigation";
 import { NavLink } from "react-router-dom";
+import logo_light from "./../../images/logo-light.png";
 
 // var bnr = require('./../../images/background/bg-5.png');
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { logo: require("./../../images/logo-light.png") };
+    this.state = { logo: logo_light };
   }
 
   state = { isSearchActive: false, isQuoteActive: false };
@@ -66,7 +67,7 @@ class Header extends React.Component {
                     }}
                   >
                     <NavLink to={"./"}>
-                      <img src={this.state.logo.default} alt="Shapen" />
+                      <img src={this.state.logo} alt="Shapen" />
                     </NavLink>
                   </div>
                 </div>

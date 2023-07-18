@@ -6,8 +6,7 @@ import About4 from "./../Elements/About4";
 import Specialization4 from "./../Elements/Specialization4";
 // import Team3 from './../Elements/Team3';
 // import AboutSummary from './../Elements/AboutSummary';
-
-var bnrimg = require("./../../images/banner/1.jpg");
+import bnrimg from "./../../images/banner/1.jpg";
 
 class About extends React.Component {
   render() {
@@ -18,7 +17,7 @@ class About extends React.Component {
           <Banner
             title="Securing lifes, building stronger communities."
             pagename="About Us"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           <About4 />
           <Specialization4 />

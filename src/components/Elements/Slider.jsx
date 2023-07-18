@@ -1,5 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import img1 from "./../../images/main-slider/slider1/slide1.jpg";
+import img2 from "./../../images/main-slider/slider1/slide2.jpg";
+import img3 from "./../../images/main-slider/slider1/slide3.jpg";
 
 class Slider extends React.Component {
   componentDidMount() {
@@ -48,10 +51,7 @@ class Slider extends React.Component {
                 data-easein="default"
                 data-easeout="default"
                 data-masterspeed="default"
-                data-thumb={
-                  require("./../../images/main-slider/slider1/slide1.jpg")
-                    .default
-                }
+                data-thumb={img1}
                 data-rotate={0}
                 data-fstransition="fade"
                 data-fsmasterspeed={300}
@@ -72,15 +72,9 @@ class Slider extends React.Component {
               >
                 {/* MAIN IMAGE */}
                 <img
-                  src={
-                    require("./../../images/main-slider/slider1/slide1.jpg")
-                      .default
-                  }
+                  src={img1}
                   alt=""
-                  data-lazyload={
-                    require("./../../images/main-slider/slider1/slide1.jpg")
-                      .default
-                  }
+                  data-lazyload={img1}
                   data-bgposition="center center"
                   data-bgfit="cover"
                   data-bgparallax={4}
@@ -256,10 +250,7 @@ class Slider extends React.Component {
                 data-easein="default"
                 data-easeout="default"
                 data-masterspeed="default"
-                data-thumb={
-                  require("./../../images/main-slider/slider1/slide2.jpg")
-                    .default
-                }
+                data-thumb={img2}
                 data-rotate={0}
                 data-fstransition="fade"
                 data-fsmasterspeed={300}
@@ -280,15 +271,9 @@ class Slider extends React.Component {
               >
                 {/* MAIN IMAGE */}
                 <img
-                  src={
-                    require("./../../images/main-slider/slider1/slide2.jpg")
-                      .default
-                  }
+                  src={img2}
                   alt=""
-                  data-lazyload={
-                    require("./../../images/main-slider/slider1/slide2.jpg")
-                      .default
-                  }
+                  data-lazyload={img2}
                   data-bgposition="center center"
                   data-bgfit="cover"
                   data-bgparallax={4}
@@ -464,10 +449,7 @@ class Slider extends React.Component {
                 data-easein="default"
                 data-easeout="default"
                 data-masterspeed="default"
-                data-thumb={
-                  require("./../../images/main-slider/slider1/slide3.jpg")
-                    .default
-                }
+                data-thumb={img3}
                 data-rotate={0}
                 data-fstransition="fade"
                 data-fsmasterspeed={300}
@@ -488,15 +470,9 @@ class Slider extends React.Component {
               >
                 {/* MAIN IMAGE */}
                 <img
-                  src={
-                    require("./../../images/main-slider/slider1/slide3.jpg")
-                      .default
-                  }
+                  src={img3}
                   alt=""
-                  data-lazyload={
-                    require("./../../images/main-slider/slider1/slide3.jpg")
-                      .default
-                  }
+                  data-lazyload={img3}
                   data-bgposition="center center"
                   data-bgfit="cover"
                   data-bgparallax={4}

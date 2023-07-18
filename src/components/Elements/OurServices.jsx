@@ -1,38 +1,42 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import bnr1 from "./../../images/background/bg-5.png";
+import crane_1 from "./../../images/icon/crane-1.png";
+import renovation from "./../../images/icon/renovation.png";
+import toolbox from "./../../images/icon/toolbox.png";
+import compass from "./../../images/icon/compass.png";
+import img1 from "./../../images/background/bg-6.png";
 
 const services = [
   {
     count: 1,
     title: `Project and Construction Management`,
-    icon: require("./../../images/icon/crane-1.png"),
+    icon: crane_1,
     description:
       "We provide owners with the day-to-day design management as part of a larger project. ",
   },
   {
     count: 2,
     title: "Site Selection",
-    icon: require("./../../images/icon/renovation.png"),
+    icon: renovation,
     description:
       "We have a unique methodology for uncovering and “creating” new sites.We maintain full in-house real estate brokerage capabilities...",
   },
   {
     count: 3,
     title: "Risk Assessments and Entitlements",
-    icon: require("./../../images/icon/toolbox.png"),
+    icon: toolbox,
     description:
       "Our team will clearly communicate to you the expectations, risks, and opportunities of your particular entitlement challenge.",
   },
-//   {
-//     count: 4,
-//     title: "Architecture Design",
-//     icon: require("./../../images/icon/compass.png"),
-//     description:
-//       "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
-//   },
+  //   {
+  //     count: 4,
+  //     title: "Architecture Design",
+  //     icon: require("./../../images/icon/compass.png"),
+  //     description:
+  //       "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
+  //   },
 ];
-
-var img1 = require("./../../images/background/bg-6.png");
 
 class OurServices extends React.Component {
   componentDidMount() {

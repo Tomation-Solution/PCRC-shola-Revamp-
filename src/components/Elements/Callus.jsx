@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-var bnr1 = require("./../../images/background/bg-1.jpg");
+import bnr1 from "../../images/background/bg-1.jpg";
 
 class Callus extends React.Component {
   render() {
