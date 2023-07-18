@@ -141,16 +141,16 @@ class Footer extends React.Component {
                     <h4 className="widget-title">Useful links</h4>
                     <ul>
                       <li>
-                        <NavLink to={"/"}>About</NavLink>
+                        <NavLink to={"/about"}>About</NavLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <NavLink to={"/"}>Projects</NavLink>
                       </li>
                       <li>
                         <NavLink to={"/"}>Blog</NavLink>
-                      </li>
+                      </li> */}
                       <li>
-                        <NavLink to={"/"}>Contact Us</NavLink>
+                        <NavLink to={"/contactus"}>Contact Us</NavLink>
                       </li>
                     </ul>{" "}
                     {/* <ul>

@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import { projects } from "./projectdata.js";
 
 const filters = [
-  { label: "Commercial", filter: ".cat-1" },
+  // { label: "Commercial", filter: ".cat-1" },
   // { label: "Education", filter: ".cat-4" },
   // { label: "Hospital", filter: ".cat-2" },
-  { label: "Residential", filter: ".cat-3" },
-  { label: "Office", filter: ".cat-5" },
+  // { label: "Residential", filter: ".cat-3" },
+  // { label: "Office", filter: ".cat-5" },
   // { label: "Reconstruction", filter: ".cat-6" }
 ];
 
@@ -89,7 +89,7 @@ class OurProject extends React.Component {
                         <h4 className="mt-tilte m-b10 m-t0">{item.title}</h4>
                         <p className="m-b0">{item.address}</p>
                       </div>
-                      <NavLink to={`/project-detail/${item.id}`}></NavLink>
+                      {/* <NavLink to={`/project-detail/${item.id}`}></NavLink> */}
                     </div>
                   </div>
                 ))}

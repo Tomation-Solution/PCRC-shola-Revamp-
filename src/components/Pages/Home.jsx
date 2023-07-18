@@ -25,7 +25,7 @@ class Home extends React.Component {
           <OurMission />
           {/* <OurServices /> */}
           <Callus />
-          {/* <OurProject /> */}
+          <OurProject />
           {/* <Blogs />
                     <Testimonials /> */}
         </div>

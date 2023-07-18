@@ -42,25 +42,27 @@ class Navigation extends React.Component {
             <li className={this.state.activeNav === "#" ? "active" : ""}>
               <NavLink to={""}>Home</NavLink>
             </li>
-            {/* <li
+            <li
               onClick={() => this.setState({ activeNav: "about" })}
               className={this.state.activeNav === "about" ? "active" : ""}
             >
               <NavLink to={"/about"}>About us</NavLink>
             </li>
             <li
-              onClick={() => this.setState({ activeNav: "services" })}
-              className={this.state.activeNav === "services" ? "active" : ""}
-            >
-              <NavLink to={"/services"}>Services</NavLink>
-            </li>
-
-            <li
               onClick={() => this.setState({ activeNav: "contactus" })}
               className={this.state.activeNav === "contactus" ? "active" : ""}
             >
               <NavLink to={"/contactus"}>Contact us</NavLink>
             </li>
+            {/*
+            <li
+              onClick={() => this.setState({ activeNav: "services" })}
+              className={this.state.activeNav === "services" ? "active" : ""}
+              >
+              <NavLink to={"/services"}>Services</NavLink>
+            </li>
+
+          
             <li
               onClick={() => this.setState({ activeNav: "project-grid" })}
               className={
